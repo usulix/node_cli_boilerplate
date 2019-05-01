@@ -1,0 +1,16 @@
+{
+  "name": "minesweeper",
+  "version": "1.0.0",
+  "description": "A minesweeper game",
+  "main": "index.js",
+  "author": "Greg Gray",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4"
+  }
+}
