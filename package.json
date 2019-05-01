@@ -7,10 +7,14 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "babel src -d lib"
+    "lint": "prettier --check 'src/**/*.js'",
+    "build": "babel src -d build",
+    "play": "yarn build && node ./build/index.js"
   },
   "dependencies": {
     "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.4"
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "prettier": "1.17.0"
   }
 }
